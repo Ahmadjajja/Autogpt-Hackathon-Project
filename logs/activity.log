@@ -1,0 +1,54 @@
+2023-10-03 21:07:21,393 WARNING  plugins_config.yaml does not exist, creating base config.
+2023-10-06 19:37:18,299 WARNING  plugins_config.yaml does not exist, creating base config.
+2023-10-06 19:38:44,844 WARNING  plugins_config.yaml does not exist, creating base config.
+2023-10-06 19:38:45,855 INFO WARNING:  You do not have access to gpt-4-0314. Setting smart_llm to gpt-3.5-turbo.
+2023-10-06 19:38:46,771 INFO NEWS: Welcome to Auto-GPT!
+2023-10-06 19:38:46,774 INFO NEWS: 
+2023-10-06 19:38:46,779 INFO NEWS: 
+2023-10-06 19:38:47,224 INFO Welcome to Auto-GPT!  run with '--help' for more information.
+2023-10-06 19:38:47,476 INFO Create an AI-Assistant: input '--manual' to enter manual mode.
+2023-10-06 19:38:47,731 INFO  Asking user via keyboard...
+2023-10-06 19:48:45,260 INFO Unable to automatically generate AI Config based on user desire. Falling back to manual mode.
+2023-10-06 19:48:45,585 INFO Create an AI-Assistant: Enter the name of your AI and its role below. Entering nothing will load defaults.
+2023-10-06 19:48:45,982 INFO Name your AI:  For example, 'Entrepreneur-GPT'
+2023-10-06 19:48:46,209 INFO  Asking user via keyboard...
+2023-10-06 19:48:46,251 INFO Entrepreneur-GPT here! I am at your service.
+2023-10-06 19:48:46,454 INFO Describe your AI's role:  For example, 'an AI designed to autonomously develop and run businesses with the sole goal of increasing your net worth.'
+2023-10-06 19:48:46,914 INFO  Asking user via keyboard...
+2023-10-06 19:48:46,960 INFO Enter up to 5 goals for your AI:  For example: 
+Increase net worth, Grow Twitter Account, Develop and manage multiple businesses autonomously'
+2023-10-06 19:48:47,411 INFO  Enter nothing to load defaults, enter nothing when finished.
+2023-10-06 19:48:47,415 INFO  Asking user via keyboard...
+2023-10-06 19:48:47,450 INFO Enter your budget for API calls:  For example: $1.50
+2023-10-06 19:48:47,662 INFO  Enter nothing to let the AI run without monetary limit
+2023-10-06 19:48:47,667 INFO  Asking user via keyboard...
+2023-10-06 19:48:47,704 INFO NOTE:All files/directories created by this agent can be found inside its workspace at: /app/auto_gpt_workspace
+2023-10-06 19:48:48,026 INFO Entrepreneur-GPT has been created with the following details:
+2023-10-06 19:48:48,230 INFO Name: Entrepreneur-GPT
+2023-10-06 19:48:48,328 INFO Role: an AI designed to autonomously develop and run businesses with the
+2023-10-06 19:48:48,651 INFO Goals: 
+2023-10-06 19:48:48,743 INFO - Increase net worth
+2023-10-06 19:48:48,911 INFO - Grow Twitter Account
+2023-10-06 19:48:49,064 INFO - Develop and manage multiple businesses autonomously
+2023-10-06 19:48:49,375 WARNING  Could not load MemoryItems from file: input length is 0: line 1 column 1 (char 0)
+2023-10-06 19:48:49,450 INFO Using memory of type: JSONFileMemory
+2023-10-06 19:48:49,661 INFO Using Browser: chrome
+2023-10-06 19:48:49,969 DEBUG  []
+2023-10-06 19:48:50,004 DEBUG  [
+    {
+        "role": "system",
+        "content": "You are Entrepreneur-GPT, an AI designed to autonomously develop and run businesses with the.\n\nYour decisions must always be made independently without seeking user assistance. Play to your strengths as an LLM and pursue simple strategies with no legal complications.\n\n## Constraints\nYou operate within the following constraints:\n1. ~4000 word limit for short term memory. Your short term memory is short, so immediately save important information to files.\n2. If you are unsure how you previously did something or want to recall past events, thinking about similar events will help you remember.\n3. No user assistance\n4. Exclusively use the commands listed below e.g. command_name\n\n## Commands\nYou have access to the following commands:\n1. execute_python_code: Creates a Python file and executes it, params: (code: string, name: string)\n2. execute_python_file: Executes an existing Python file, params: (filename: string)\n3. list_files: Lists Files in a Directory, params: (directory: string)\n4. read_file: Read an existing file, params: (filename: string)\n5. write_to_file: Writes to a file, params: (filename: string, text: string)\n6. web_search: Searches the web, params: (query: string)\n7. browse_website: Browses a Website, params: (url: string, question: string)\n8. goals_accomplished: Goals are accomplished and there is nothing left to do, params: (reason: string)\n\n## Resources\nYou can leverage access to the following resources:\n1. Internet access for searches and information gathering.\n2. Long Term memory management.\n3. File output.\n4. Command execution\n\n## Best practices\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\n2. Constructively self-criticize your big-picture behavior constantly.\n3. Reflect on past decisions and strategies to refine your approach.\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.\n\n## Goals\nFor your task, you must fulfill the following goals:\n1. Increase net worth\n2. Grow Twitter Account\n3. Develop and manage multiple businesses autonomously"
+    },
+    {
+        "role": "system",
+        "content": "The current time and date is Fri Oct  6 19:48:49 2023"
+    },
+    {
+        "role": "system",
+        "content": "Respond strictly with JSON. The JSON should be compatible with the TypeScript type `Response` from the following:\n```ts\ninterface Response {\nthoughts: {\n// Thoughts\ntext: string;\nreasoning: string;\n// Short markdown-style bullet list that conveys the long-term plan\nplan: string;\n// Constructive self-criticism\ncriticism: string;\n// Summary of thoughts to say to the user\nspeak: string;\n};\ncommand: {\nname: string;\nargs: Record<string, any>;\n};\n}\n```\n"
+    },
+    {
+        "role": "user",
+        "content": "Determine exactly one command to use based on the given goals and the progress you have made so far, and respond using the JSON schema specified previously:"
+    }
+]
